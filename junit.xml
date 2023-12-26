@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="12" failures="5" errors="0" time="4.735">
+  <testsuite name="Weather Dashboard" errors="0" failures="5" skipped="0" timestamp="2023-12-19T22:32:24" time="3.005" tests="12">
+    <testcase classname="Weather Dashboard search input is cleared when clear button is clicked" name="Weather Dashboard search input is cleared when clear button is clicked" time="0.158">
+    </testcase>
+    <testcase classname="Weather Dashboard default temperature unit is &quot;Celsius&quot;" name="Weather Dashboard default temperature unit is &quot;Celsius&quot;" time="0.016">
+    </testcase>
+    <testcase classname="Weather Dashboard toggles temperature unit between Fahrenheit and Celsius" name="Weather Dashboard toggles temperature unit between Fahrenheit and Celsius" time="0.019">
+    </testcase>
+    <testcase classname="Weather Dashboard updates temperature values with 1 decimal place in search-results when Fahrenheit is selected" name="Weather Dashboard updates temperature values with 1 decimal place in search-results when Fahrenheit is selected" time="0.054">
+    </testcase>
+    <testcase classname="Weather Dashboard updates temperature values with 1 decimal place in search-results when Celsius is selected" name="Weather Dashboard updates temperature values with 1 decimal place in search-results when Celsius is selected" time="0.032">
+    </testcase>
+    <testcase classname="Weather Dashboard updates temperature values with 1 decimal place in favorites when Fahrenheit is selected" name="Weather Dashboard updates temperature values with 1 decimal place in favorites when Fahrenheit is selected" time="0.039">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: Add to favorites
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-1&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-2&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-3&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-4&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-5&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-6&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;layout-column align-items-center justify-content-start weather-list&quot;
+      data-testid=&quot;weather-list&quot;
+    &gt;
+      &lt;h3&gt;
+        Dashboard
+      &lt;/h3&gt;
+      &lt;p
+        class=&quot;city-details&quot;
+      &gt;
+        Search for Current Temperature in cities like: New York, London, Paris etc.
+      &lt;/p&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5 mt-5&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;input
+            data-testid=&quot;search-input&quot;
+            placeholder=&quot;Search city&quot;
+            type=&quot;text&quot;
+            value=&quot;London&quot;
+          /&gt;
+          &lt;button
+            data-testid=&quot;clear-search-button&quot;
+          &gt;
+            Clear search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;table
+          class=&quot;table search-results&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-1&quot;
+            &gt;
+              &lt;td&gt;
+                New York
+              &lt;/td&gt;
+              &lt;td&gt;
+                18.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-1&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-2&quot;
+            &gt;
+              &lt;td&gt;
+                London
+              &lt;/td&gt;
+              &lt;td&gt;
+                12.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Cloudy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-2&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-3&quot;
+            &gt;
+              &lt;td&gt;
+                Paris
+              &lt;/td&gt;
+              &lt;td&gt;
+                16.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Rainy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-3&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-4&quot;
+            &gt;
+              &lt;td&gt;
+                Tokyo
+              &lt;/td&gt;
+              &lt;td&gt;
+                22.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Clear
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-4&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-5&quot;
+            &gt;
+              &lt;td&gt;
+                Sydney
+              &lt;/td&gt;
+              &lt;td&gt;
+                24.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-5&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-6&quot;
+            &gt;
+              &lt;td&gt;
+                Moscow
+              &lt;/td&gt;
+              &lt;td&gt;
+                5.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Snowy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-6&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;button
+            class=&quot;outlined&quot;
+            data-testid=&quot;unit-change-button&quot;
+          &gt;
+            Switch to 
+            Fahrenheit
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;
+        Favourite Cities
+      &lt;/h3&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5&quot;
+      &gt;
+        &lt;table
+          class=&quot;table favorites&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody /&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByText (/Users/josney/Desktop/private-hk-master/src/App.test.tsx:67:41)
+    at Promise.then.completed (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Weather Dashboard updates temperature values with 1 decimal place in favorites when Celsius is selected" name="Weather Dashboard updates temperature values with 1 decimal place in favorites when Celsius is selected" time="0.035">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: Add to favorites
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-1&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-2&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-3&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-4&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-5&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-6&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;layout-column align-items-center justify-content-start weather-list&quot;
+      data-testid=&quot;weather-list&quot;
+    &gt;
+      &lt;h3&gt;
+        Dashboard
+      &lt;/h3&gt;
+      &lt;p
+        class=&quot;city-details&quot;
+      &gt;
+        Search for Current Temperature in cities like: New York, London, Paris etc.
+      &lt;/p&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5 mt-5&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;input
+            data-testid=&quot;search-input&quot;
+            placeholder=&quot;Search city&quot;
+            type=&quot;text&quot;
+            value=&quot;London&quot;
+          /&gt;
+          &lt;button
+            data-testid=&quot;clear-search-button&quot;
+          &gt;
+            Clear search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;table
+          class=&quot;table search-results&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-1&quot;
+            &gt;
+              &lt;td&gt;
+                New York
+              &lt;/td&gt;
+              &lt;td&gt;
+                18.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-1&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-2&quot;
+            &gt;
+              &lt;td&gt;
+                London
+              &lt;/td&gt;
+              &lt;td&gt;
+                12.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Cloudy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-2&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-3&quot;
+            &gt;
+              &lt;td&gt;
+                Paris
+              &lt;/td&gt;
+              &lt;td&gt;
+                16.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Rainy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-3&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-4&quot;
+            &gt;
+              &lt;td&gt;
+                Tokyo
+              &lt;/td&gt;
+              &lt;td&gt;
+                22.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Clear
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-4&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-5&quot;
+            &gt;
+              &lt;td&gt;
+                Sydney
+              &lt;/td&gt;
+              &lt;td&gt;
+                24.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-5&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-6&quot;
+            &gt;
+              &lt;td&gt;
+                Moscow
+              &lt;/td&gt;
+              &lt;td&gt;
+                5.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Snowy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-6&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;button
+            class=&quot;outlined&quot;
+            data-testid=&quot;unit-change-button&quot;
+          &gt;
+            Switch to 
+            Fahrenheit
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;
+        Favourite Cities
+      &lt;/h3&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5&quot;
+      &gt;
+        &lt;table
+          class=&quot;table favorites&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody /&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByText (/Users/josney/Desktop/private-hk-master/src/App.test.tsx:83:41)
+    at Promise.then.completed (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Weather Dashboard displays city weather information when searched" name="Weather Dashboard displays city weather information when searched" time="0.021">
+    </testcase>
+    <testcase classname="Weather Dashboard adds city to favorite when &quot;Add to favorites&quot; is clicked" name="Weather Dashboard adds city to favorite when &quot;Add to favorites&quot; is clicked" time="0.035">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: Add to favorites
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-1&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-2&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-3&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-4&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-5&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-6&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;layout-column align-items-center justify-content-start weather-list&quot;
+      data-testid=&quot;weather-list&quot;
+    &gt;
+      &lt;h3&gt;
+        Dashboard
+      &lt;/h3&gt;
+      &lt;p
+        class=&quot;city-details&quot;
+      &gt;
+        Search for Current Temperature in cities like: New York, London, Paris etc.
+      &lt;/p&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5 mt-5&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;input
+            data-testid=&quot;search-input&quot;
+            placeholder=&quot;Search city&quot;
+            type=&quot;text&quot;
+            value=&quot;London&quot;
+          /&gt;
+          &lt;button
+            data-testid=&quot;clear-search-button&quot;
+          &gt;
+            Clear search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;table
+          class=&quot;table search-results&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-1&quot;
+            &gt;
+              &lt;td&gt;
+                New York
+              &lt;/td&gt;
+              &lt;td&gt;
+                18.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-1&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-2&quot;
+            &gt;
+              &lt;td&gt;
+                London
+              &lt;/td&gt;
+              &lt;td&gt;
+                12.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Cloudy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-2&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-3&quot;
+            &gt;
+              &lt;td&gt;
+                Paris
+              &lt;/td&gt;
+              &lt;td&gt;
+                16.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Rainy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-3&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-4&quot;
+            &gt;
+              &lt;td&gt;
+                Tokyo
+              &lt;/td&gt;
+              &lt;td&gt;
+                22.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Clear
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-4&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-5&quot;
+            &gt;
+              &lt;td&gt;
+                Sydney
+              &lt;/td&gt;
+              &lt;td&gt;
+                24.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-5&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-6&quot;
+            &gt;
+              &lt;td&gt;
+                Moscow
+              &lt;/td&gt;
+              &lt;td&gt;
+                5.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Snowy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-6&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;button
+            class=&quot;outlined&quot;
+            data-testid=&quot;unit-change-button&quot;
+          &gt;
+            Switch to 
+            Fahrenheit
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;
+        Favourite Cities
+      &lt;/h3&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5&quot;
+      &gt;
+        &lt;table
+          class=&quot;table favorites&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody /&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByText (/Users/josney/Desktop/private-hk-master/src/App.test.tsx:108:41)
+    at Promise.then.completed (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Weather Dashboard removes city from favorite when &quot;Remove from favorites&quot; is clicked from favorites table" name="Weather Dashboard removes city from favorite when &quot;Remove from favorites&quot; is clicked from favorites table" time="0.049">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: Add to favorites
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-1&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-2&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-3&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-4&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-5&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-6&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;layout-column align-items-center justify-content-start weather-list&quot;
+      data-testid=&quot;weather-list&quot;
+    &gt;
+      &lt;h3&gt;
+        Dashboard
+      &lt;/h3&gt;
+      &lt;p
+        class=&quot;city-details&quot;
+      &gt;
+        Search for Current Temperature in cities like: New York, London, Paris etc.
+      &lt;/p&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5 mt-5&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;input
+            data-testid=&quot;search-input&quot;
+            placeholder=&quot;Search city&quot;
+            type=&quot;text&quot;
+            value=&quot;London&quot;
+          /&gt;
+          &lt;button
+            data-testid=&quot;clear-search-button&quot;
+          &gt;
+            Clear search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;table
+          class=&quot;table search-results&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-1&quot;
+            &gt;
+              &lt;td&gt;
+                New York
+              &lt;/td&gt;
+              &lt;td&gt;
+                18.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-1&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-2&quot;
+            &gt;
+              &lt;td&gt;
+                London
+              &lt;/td&gt;
+              &lt;td&gt;
+                12.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Cloudy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-2&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-3&quot;
+            &gt;
+              &lt;td&gt;
+                Paris
+              &lt;/td&gt;
+              &lt;td&gt;
+                16.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Rainy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-3&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-4&quot;
+            &gt;
+              &lt;td&gt;
+                Tokyo
+              &lt;/td&gt;
+              &lt;td&gt;
+                22.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Clear
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-4&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-5&quot;
+            &gt;
+              &lt;td&gt;
+                Sydney
+              &lt;/td&gt;
+              &lt;td&gt;
+                24.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-5&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-6&quot;
+            &gt;
+              &lt;td&gt;
+                Moscow
+              &lt;/td&gt;
+              &lt;td&gt;
+                5.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Snowy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-6&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;button
+            class=&quot;outlined&quot;
+            data-testid=&quot;unit-change-button&quot;
+          &gt;
+            Switch to 
+            Fahrenheit
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;
+        Favourite Cities
+      &lt;/h3&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5&quot;
+      &gt;
+        &lt;table
+          class=&quot;table favorites&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody /&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByText (/Users/josney/Desktop/private-hk-master/src/App.test.tsx:119:41)
+    at Promise.then.completed (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Weather Dashboard removes city from favorite when &quot;Remove from favorites&quot; is clicked from search table" name="Weather Dashboard removes city from favorite when &quot;Remove from favorites&quot; is clicked from search table" time="0.037">
+      <failure>TestingLibraryElementError: Found multiple elements with the text: Add to favorites
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-1&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-2&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-3&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-4&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-5&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+Ignored nodes: comments, script, style
+&lt;button
+  data-testid=&quot;weather-card-action-6&quot;
+&gt;
+  Add to favorites
+&lt;/button&gt;
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;layout-column align-items-center justify-content-start weather-list&quot;
+      data-testid=&quot;weather-list&quot;
+    &gt;
+      &lt;h3&gt;
+        Dashboard
+      &lt;/h3&gt;
+      &lt;p
+        class=&quot;city-details&quot;
+      &gt;
+        Search for Current Temperature in cities like: New York, London, Paris etc.
+      &lt;/p&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5 mt-5&quot;
+      &gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;input
+            data-testid=&quot;search-input&quot;
+            placeholder=&quot;Search city&quot;
+            type=&quot;text&quot;
+            value=&quot;London&quot;
+          /&gt;
+          &lt;button
+            data-testid=&quot;clear-search-button&quot;
+          &gt;
+            Clear search
+          &lt;/button&gt;
+        &lt;/section&gt;
+        &lt;table
+          class=&quot;table search-results&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-1&quot;
+            &gt;
+              &lt;td&gt;
+                New York
+              &lt;/td&gt;
+              &lt;td&gt;
+                18.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-1&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-2&quot;
+            &gt;
+              &lt;td&gt;
+                London
+              &lt;/td&gt;
+              &lt;td&gt;
+                12.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Cloudy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-2&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-3&quot;
+            &gt;
+              &lt;td&gt;
+                Paris
+              &lt;/td&gt;
+              &lt;td&gt;
+                16.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Rainy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-3&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-4&quot;
+            &gt;
+              &lt;td&gt;
+                Tokyo
+              &lt;/td&gt;
+              &lt;td&gt;
+                22.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Clear
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-4&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-5&quot;
+            &gt;
+              &lt;td&gt;
+                Sydney
+              &lt;/td&gt;
+              &lt;td&gt;
+                24.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Sunny
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-5&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr
+              class=&quot;weather-card&quot;
+              data-testid=&quot;weather-card-6&quot;
+            &gt;
+              &lt;td&gt;
+                Moscow
+              &lt;/td&gt;
+              &lt;td&gt;
+                5.0°C
+              &lt;/td&gt;
+              &lt;td&gt;
+                Snowy
+              &lt;/td&gt;
+              &lt;td&gt;
+                &lt;button
+                  data-testid=&quot;weather-card-action-6&quot;
+                &gt;
+                  Add to favorites
+                &lt;/button&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;section
+          class=&quot;layout-row align-items-center justify-content-center mt-20 mr-20 ml-20&quot;
+        &gt;
+          &lt;button
+            class=&quot;outlined&quot;
+            data-testid=&quot;unit-change-button&quot;
+          &gt;
+            Switch to 
+            Fahrenheit
+          &lt;/button&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;
+        Favourite Cities
+      &lt;/h3&gt;
+      &lt;div
+        class=&quot;card w-300 pt-20 pb-5&quot;
+      &gt;
+        &lt;table
+          class=&quot;table favorites&quot;
+        &gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;
+                City
+              &lt;/th&gt;
+              &lt;th&gt;
+                Temperature
+              &lt;/th&gt;
+              &lt;th&gt;
+                Description
+              &lt;/th&gt;
+              &lt;th&gt;
+                Action
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody /&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getElementError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
+    at getMultipleElementsFoundError (/Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+    at /Users/josney/Desktop/private-hk-master/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at Object.getByText (/Users/josney/Desktop/private-hk-master/src/App.test.tsx:133:41)
+    at Promise.then.completed (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/josney/Desktop/private-hk-master/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Weather Dashboard changes temperature unit when unit change button is clicked" name="Weather Dashboard changes temperature unit when unit change button is clicked" time="0.036">
+    </testcase>
+  </testsuite>
+</testsuites>
